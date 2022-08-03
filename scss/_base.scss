@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //1rem= 10px;  10px/16px = 62.5%
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  image-rendering: pixelated;
+}
+
+li {
+  list-style: none;
+  transition: all 0.5s;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:hover p:hover {
+  opacity: 0.7;
+}
+
+a:hover img:hover {
+  opacity: 0.7;
+}
+//////////
+//MAX WIETH
+.basic {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// /////////////////
+//FLEX 関係
+.flex {
+  display: flex;
+}
+//////////// JUSTIFY-CONTENT
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+////////////// ALIGN-ITEMS
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.items-stretch {
+  align-items: stretch;
+}
+//////////// FLEX-DIRECTION
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+//////////// FLEX-WRAP
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/////////////
+// MARGIN　関係
+.md {
+  margin: 2rem;
+}
+.mr-md {
+  margin-right: 2rem;
+}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-lg {
+  margin-bottom: 8rem;
+}
+
+.hidden {
+  display: none;
+}

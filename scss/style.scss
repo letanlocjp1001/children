@@ -1,0 +1,717 @@
+@import 'base';
+@import 'variables';
+
+//BTN
+.btn {
+  display: block;
+  position: relative;
+  width: 280px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  &:hover {
+    color: $pink;
+    .btn-arrow {
+      background-color: $pink;
+
+      &::before {
+        border-left-color: #fff;
+      }
+    }
+  }
+}
+
+.btn-1 {
+  display: block;
+  position: relative;
+  width: 280px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  &:hover {
+    color: $blue;
+    .btn-arrow-1 {
+      background-color: $blue;
+
+      &::before {
+        border-left-color: #fff;
+      }
+    }
+  }
+}
+
+.btn-2 {
+  display: block;
+  position: relative;
+  width: 280px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  &:hover {
+    color: $blue;
+    .btn-arrow-2 {
+      background-color: white;
+
+      &::before {
+        border-left-color: $red;
+      }
+    }
+  }
+}
+.btn-3 {
+  display: block;
+  position: relative;
+  width: 280px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  &:hover {
+    color: $pink;
+    .btn-arrow-3 {
+      background-color: white;
+
+      &::before {
+        border-left-color: #ec93c5;
+      }
+    }
+  }
+}
+
+.btn-arrow {
+  position: absolute;
+  right: 2rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 6px;
+    border-color: transparent;
+    border-left-color: $pink;
+    top: 5px;
+    left: 8px;
+  }
+}
+
+.btn-arrow-1 {
+  position: absolute;
+  right: 2rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 6px;
+    border-color: transparent;
+    border-left-color: $blue;
+    top: 5px;
+    left: 8px;
+  }
+}
+.btn-arrow-2 {
+  position: absolute;
+  right: 2rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: $pink;
+  border-radius: 50%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 6px;
+    border-color: transparent;
+    border-left-color: white;
+    top: 5px;
+    left: 8px;
+  }
+}
+.btn-arrow-3 {
+  position: absolute;
+  right: 2rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ec93c5;
+  border-radius: 50%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 6px;
+    border-color: transparent;
+    border-left-color: white;
+    top: 5px;
+    left: 8px;
+  }
+}
+
+//////////////////////////////
+//COLOR
+.bg-pink {
+  background: $pink;
+  border: 3px solid $pink;
+  &:hover {
+    background-color: white;
+  }
+}
+.bg-blue {
+  background: $blue;
+  border: 3px solid $blue;
+  &:hover {
+    background-color: white;
+  }
+}
+.bg-white {
+  background: white;
+  border: 3px solid white;
+  color: $red;
+  &:hover {
+    background-color: $red;
+    color: white;
+    opacity: 1;
+  }
+}
+.bg-white-2 {
+  background: white;
+  border: 3px solid white;
+  color: #ec93c5;
+  &:hover {
+    background-color: #ec93c5;
+    color: white;
+    opacity: 1;
+  }
+}
+.bg-red {
+  background: $red;
+  border: 3px solid white;
+
+  &:hover {
+    background: white;
+    color: $red;
+    border: 3px solid $red;
+
+    opacity: 1;
+  }
+}
+.bg-red-2 {
+  background: $red;
+  border: 3px solid $red;
+
+  &:hover {
+    background: white;
+    color: $red;
+    border: 3px solid $red;
+
+    opacity: 1;
+  }
+}
+
+.headerTop {
+  justify-content: space-between;
+  padding: 2rem;
+  background: #fff;
+}
+
+//LOGO
+.logo {
+  span {
+    margin-left: 2.5rem;
+  }
+}
+
+// NAVBAR
+
+.headerMiddle {
+  background: $yellow;
+}
+.nav {
+  max-width: 980px;
+  margin: 0 auto;
+  li {
+    padding: 2.5rem 1.5rem;
+    min-width: 150px;
+    text-align: center;
+    &:hover {
+      background: #ffd700;
+    }
+    a {
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+  }
+}
+
+// /////////////////
+// BANNER
+.banner {
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+// MESSEAGE
+.msg {
+  background: $red;
+  padding: 35px 0;
+  color: #fff;
+  p {
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1.8;
+  }
+}
+
+//////////////////////
+//ゲームについて
+.game {
+  background: url(../image/ami.png) no-repeat center center;
+  background-size: cover;
+  height: 660px;
+  position: relative;
+  z-index: 1;
+
+  &__content {
+    z-index: 1;
+  }
+
+  &__sub {
+    line-height: 3;
+    font-size: 1.8rem;
+    text-align: center;
+
+    span {
+      background: linear-gradient(transparent 60%, $yellow 60%);
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+  }
+}
+//////////
+/// LINE & CIRCLE
+.line-1,
+.line-2,
+.circle-1,
+.circle-2 {
+  position: absolute;
+}
+.line-1 {
+  top: 0;
+  left: -20rem;
+}
+.line-2 {
+  right: -20rem;
+  bottom: 0;
+}
+.circle-1 {
+  bottom: 0;
+  left: 0;
+}
+.circle-2 {
+  top: 0;
+  right: 0;
+}
+
+/////////////////
+/// STRESS
+.stress {
+  background: url(../image/bg-blue.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+
+  .title {
+    z-index: 1;
+  }
+}
+
+.cloud-1,
+.cloud-2,
+.cloud-3,
+.cloud-4 {
+  padding: 1rem 2rem;
+}
+
+.cloud-small {
+  span:first-child {
+    position: absolute;
+
+    left: 10rem;
+    opacity: 0.5;
+    animation: cloudMove-1 2s linear infinite alternate;
+  }
+  span:nth-child(2) {
+    position: absolute;
+    top: 25rem;
+    left: 40rem;
+    opacity: 0.5;
+    animation: cloudMove-2 2s linear infinite alternate;
+  }
+  span:nth-child(3) {
+    position: absolute;
+    top: 35rem;
+    right: 50rem;
+    opacity: 0.5;
+    animation: cloudMove-3 2s linear infinite alternate;
+  }
+  span:last-child {
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+    opacity: 0.5;
+    animation: cloudMove-1 3s ease-in-out infinite alternate;
+  }
+}
+////////////
+/// OTHER TABLE
+.other {
+  position: relative;
+  &__title {
+    position: absolute;
+    top: -30px;
+    width: 40rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4290c6;
+    text-align: center;
+    padding: 1rem 2.5rem;
+    box-shadow: 10px 10px 0 rgb(94, 176, 235);
+    z-index: 10;
+  }
+
+  &__table {
+    background-color: #fff;
+    border: 2px solid #4290c6;
+    padding: 8rem 6rem;
+    z-index: 1;
+  }
+  &__list {
+    li {
+      width: 50%;
+      font-size: 2rem;
+      text-indent: -2.5rem;
+    }
+    li::before {
+      content: '●';
+      color: #4290c6;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+/////////////
+/// SERVICE
+
+.service {
+  background: url(../image//bg-green.png) no-repeat center center;
+  background-size: cover;
+  height: 260vh;
+  position: relative;
+
+  &__title {
+    margin-top: 10rem;
+  }
+
+  &__sub {
+    color: #fff;
+    margin-left: 10rem;
+    p {
+      line-height: 2;
+      font-size: 1.6rem;
+    }
+  }
+}
+.ami-circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1 !important;
+}
+.circle {
+  position: absolute;
+  top: -20rem;
+  left: 0;
+}
+
+////////////FLAG////
+.flag {
+  background: #fff;
+  font-size: 2.3rem;
+  max-width: 900px;
+  padding: 3rem 1rem 3rem 15rem;
+  z-index: 10 !important;
+
+  span {
+    color: $blue-light;
+    font-size: 3.4rem;
+  }
+}
+
+//////////コース
+.course {
+  z-index: 100 !important;
+
+  &__title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+    position: relative;
+    border-bottom: 1px solid #c0e538;
+  }
+  h4::before {
+    content: '';
+    width: 50px;
+    height: 7px;
+    background: #c0e538;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skew(-40deg);
+  }
+
+  &__content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 100 !important;
+  }
+  &__left {
+    flex: 30%;
+    h4 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #4290c6;
+      margin-left: 2rem;
+    }
+  }
+  &__right {
+    flex: 70%;
+    li {
+      padding: 2px 0;
+      font-size: 1.6rem;
+    }
+    .c01::before {
+      content: '●';
+      color: #7cbbe7;
+    }
+    .c02::before {
+      content: '●';
+      color: #a7cc90;
+    }
+    .c03::before {
+      content: '●';
+      color: #dd92c0;
+    }
+    .c04::before {
+      content: '●';
+      color: #e7c07c;
+    }
+  }
+
+  &__list {
+    li {
+      width: 48%;
+      padding: 2rem;
+      p {
+        width: 98%;
+      }
+    }
+  }
+}
+
+.game-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4290c6;
+  margin-left: 2rem;
+}
+.game-txt {
+  font-size: 16px;
+}
+.game-box {
+  min-width: 390px;
+}
+
+///////TELEPHONE
+///
+.contact {
+  background: #6384c2;
+  color: #fff;
+  height: 200px;
+
+  .telephone {
+    margin-right: 4rem;
+    h4 {
+      margin-left: 5rem;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    p::before {
+      content: url(../image/phone.png);
+      margin-right: 1rem;
+    }
+  }
+  &-right {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+
+    .qr {
+      width: 50%;
+    }
+    span {
+      color: #000;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  }
+}
+.line {
+  margin-left: 5rem;
+}
+
+//ABOUT
+.about {
+  background: url(../image/bg-about.png) center center;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+
+  &-img {
+    flex: 50%;
+    img {
+      box-shadow: 15px 15px 0 #e4adbc;
+      border-radius: 15px;
+    }
+  }
+
+  &-right {
+    h4 {
+      font-size: 3rem;
+      color: $pink;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/////// NIKKI
+///
+.nikki {
+  background: url(../image/bg-nikki.png) no-repeat center center;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  .nikki-title {
+    text-align: center;
+  }
+
+  &-list {
+    li {
+      width: 30%;
+      margin: 0 0 3.33% 3.33%;
+    }
+  }
+}
+
+//////BANER
+///
+.bnr {
+  height: 45vh;
+  background: url(../image/bg-tree.png) no-repeat center center;
+  background-position: center;
+  background-size: cover;
+  img {
+    margin: 0 2rem;
+  }
+}
+
+.info {
+  padding: 5rem 0;
+  &-f {
+    flex: 50%;
+  }
+  &-r {
+    flex: 50%;
+  }
+  &-list {
+    padding-right: 4rem;
+    font-size: 1.6rem;
+  }
+}
+.copy {
+  text-align: center;
+}
+
+////////////
+/// ANIMATION
+
+@keyframes cloudMove-1 {
+  0% {
+    top: 20rem;
+  }
+  100% {
+    top: 25rem;
+  }
+}
+@keyframes cloudMove-2 {
+  0% {
+    top: 27rem;
+  }
+  100% {
+    top: 23rem;
+  }
+}
+@keyframes cloudMove-3 {
+  0% {
+    top: 25rem;
+  }
+  100% {
+    top: 30rem;
+  }
+}
