@@ -373,14 +373,14 @@
 
     left: 10rem;
     opacity: 0.5;
-    animation: cloudMove-1 2s linear infinite alternate;
+    animation: cloudMove-1 3s linear infinite alternate;
   }
   span:nth-child(2) {
     position: absolute;
     top: 25rem;
     left: 40rem;
     opacity: 0.5;
-    animation: cloudMove-2 2s linear infinite alternate;
+    animation: cloudMove-2 2.5s linear infinite alternate;
   }
   span:nth-child(3) {
     position: absolute;
@@ -696,7 +696,7 @@
     top: 20rem;
   }
   100% {
-    top: 25rem;
+    top: 28rem;
   }
 }
 @keyframes cloudMove-2 {
@@ -704,7 +704,7 @@
     top: 27rem;
   }
   100% {
-    top: 23rem;
+    top: 20rem;
   }
 }
 @keyframes cloudMove-3 {
@@ -712,6 +712,6 @@
     top: 25rem;
   }
   100% {
-    top: 30rem;
+    top: 32rem;
   }
 }
