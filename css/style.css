@@ -1056,7 +1056,7 @@ a:hover img:hover {
   right: -100%;
   z-index: 1000;
   text-align: center;
-  transition: all 2s linear; }
+  transition: right 0.5s linear; }
   @media screen and (max-width: 767px) {
     .btnFixed {
       right: 0;
