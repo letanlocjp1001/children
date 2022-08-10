@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/lazy.js"></script>
     <link rel="stylesheet" href="css/lazy.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -66,7 +68,7 @@
         </a>
       </ul>
 
-      <div class="headerMiddle">
+      <div class="headerMiddle lazy lazy_bottom">
         <ul class="nav flex justify-between items-center">
           <li>
             <a href=""> マイスクールについて</a>
@@ -90,10 +92,10 @@
       </div>
     </header>
     <main>
-      <article class="banner">
+      <article class="banner lazy lazy_bottom">
         <img src="./image/banner.png" alt="banner" />
       </article>
-      <article class="msg">
+      <article class="msg lazy lazy_bottom">
         <div class="basic flex justify-between items-center msg-group">
           <div>
             <p>
@@ -118,7 +120,9 @@
         </a>
       </div>
 
-      <article class="game flex justify-center items-center flex-col">
+      <article
+        class="game flex justify-center items-center flex-col lazy lazy_bottom"
+      >
         <section
           class="game__content flex justify-center items-center flex-col basic"
         >
@@ -152,8 +156,12 @@
           <img src="./image/circle-right.png" alt="" />
         </div>
       </article>
-      <article class="stress flex justify-center items-center flex-col">
-        <section class="flex justify-center items-center flex-col">
+      <article
+        class="stress flex justify-center items-center flex-col lazy lazy_bottom"
+      >
+        <section
+          class="flex justify-center items-center flex-col lazy lazy_bottom"
+        >
           <img src="image/title-2.png" alt="title" class="mb-md title" />
           <div class="cloud flex justify-between basic mb-lg">
             <div class="cloud-1">
@@ -207,8 +215,10 @@
         </section>
       </article>
 
-      <article class="service">
-        <section class="service__content flex flex-col">
+      <article class="service lazy lazy_bottom">
+        <section
+          class="service__content flex flex-col lazy lazy_bottom lazy lazy_bottom"
+        >
           <div class="circle">
             <img src="image/cirlce-2.png" alt="" />
           </div>
@@ -236,11 +246,11 @@
           </h4>
         </div>
 
-        <section class="course basic">
+        <section class="course basic lazy lazy_bottom">
           <div class="course__title mb-md">
             <h4>ゲームカレッジLv.99 ゲーム学習カリキュラム</h4>
           </div>
-          <div class="course__content mb-md">
+          <div class="course__content mb-md lazy lazy_bottom">
             <div class="flex justify-between course__groups">
               <div class="course__left flex items-center">
                 <img src="./image/keyboard.png" alt="" />
@@ -304,7 +314,7 @@
             </div>
           </div>
 
-          <div class="course__content mb-md">
+          <div class="course__content mb-md lazy lazy_bottom">
             <div class="flex justify-between items-center course__book">
               <div class="flex items-center">
                 <img src="./image/book.png" alt="" />
@@ -339,7 +349,7 @@
           </div>
         </section>
       </article>
-      <article class="contact flex items-center">
+      <article class="contact flex items-center lazy lazy_bottom">
         <section class="flex items-center basic telephoneGroup">
           <div class="telephone">
             <h4>株式会社MYTH</h4>
@@ -356,7 +366,7 @@
         </section>
       </article>
 
-      <article class="about flex items-center">
+      <article class="about flex items-center lazy lazy_bottom">
         <section class="aboutS basic flex">
           <div class="about-img">
             <img src="./image/img-about.png" alt="" />
@@ -378,7 +388,7 @@
         </section>
       </article>
 
-      <article class="nikki flex items-center">
+      <article class="nikki flex items-center lazy lazy_bottom">
         <section class="nikkiS basic flex items-center flex-col">
           <div class="nikki-title mb-lg">
             <img src="./image/mystyle.png" alt="" />
@@ -402,7 +412,7 @@
         </section>
       </article>
 
-      <article class="bnr flex justify-center items-center">
+      <article class="bnr flex justify-center items-center lazy lazy_bottom">
         <section class="flex justify-center bnr-group">
           <img src="./image/img-facility.png" alt="" />
           <img src="./image/img-recruit.png" alt="" />
@@ -425,7 +435,7 @@
         </section>
       </article>
     </main>
-    <footer class="info basic">
+    <footer class="info basic lazy lazy_bottom">
       <div class="flex justify-between items-center mb-md info-group">
         <div class="info-f">
           <img src="./image/logo.png" alt="" />

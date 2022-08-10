@@ -470,12 +470,10 @@ a:hover img:hover {
   background: url(../image/bg-blue.png) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 90vh;
-  position: relative; }
-  @media screen and (max-width: 767px) {
-    .stress {
-      height: 100%;
-      padding-top: 3rem; } }
+  height: 100%;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
   .stress .title {
     z-index: 1; }
     @media screen and (max-width: 767px) {
