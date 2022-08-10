@@ -25,7 +25,6 @@ img {
   margin: 0;
   padding: 0;
   vertical-align: bottom;
-  image-rendering: pixelated;
 }
 
 li {
@@ -59,6 +58,22 @@ a:hover img:hover {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 1280px) {
+    max-width: 920px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media screen and (max-width: 1000px) {
+    max-width: 850px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 700px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 // /////////////////

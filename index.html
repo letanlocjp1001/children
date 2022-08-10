@@ -38,7 +38,34 @@
             <span>お問い合わせ・体験予約　<i class="btn-arrow-1"></i></span>
           </a>
         </div>
+
+        <div class="hambuger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+
+      <ul
+        class="hambuger__list hiddenNav flex justify-center items-center flex-col"
+      >
+        <li class="hambuger__list-item">
+          <a href=""> マイスクールについて </a>
+        </li>
+        <li class="hambuger__list-item"><a href=""> ゲーム学習について </a></li>
+        <li class="hambuger__list-item"><a href=""> ご利用内容 </a></li>
+        <li class="hambuger__list-item"><a href=""> 施設情報 </a></li>
+        <li class="hambuger__list-item"><a href=""> 受給者証について </a></li>
+        <li class="hambuger__list-item"><a href=""> マイスく日記 </a></li>
+
+        <a href="" class="btn bg-pink mb-md">
+          <span>採用情報　<i class="btn-arrow"></i></span>
+        </a>
+        <a href="" class="btn-1 bg-blue">
+          <span>お問い合わせ・体験予約　<i class="btn-arrow-1"></i></span>
+        </a>
+      </ul>
+
       <div class="headerMiddle">
         <ul class="nav flex justify-between items-center">
           <li>
@@ -67,14 +94,14 @@
         <img src="./image/banner.png" alt="banner" />
       </article>
       <article class="msg">
-        <div class="basic flex justify-between items-center">
+        <div class="basic flex justify-between items-center msg-group">
           <div>
             <p>
               東京大学院情報学環 准教授 <br />
               Global Teacher Prize 2019 TOP10小学校教諭が監修！
             </p>
           </div>
-          <div>
+          <div class="msg-btn">
             <a href="" class="btn-2 bg-white"
               >監修者メッセージ
               <span><i class="btn-arrow-2"></i></span>
@@ -82,6 +109,14 @@
           </div>
         </div>
       </article>
+      <div class="btnFixed" id="btnFixed">
+        <a href="" class="btn bg-pink">
+          <span>採用情報　<i class="btn-arrow"></i></span>
+        </a>
+        <a href="" class="btn-1 bg-blue">
+          <span>お問い合わせ<br />体験予約　<i class="btn-arrow-1"></i></span>
+        </a>
+      </div>
 
       <article class="game flex justify-center items-center flex-col">
         <section
@@ -161,7 +196,7 @@
                 <li>
                   育児と仕事に追われて、ストレスを子どもに<br />ぶつけてしまう。
                 </li>
-                <li>障がい者手帳や療育手帳は持っていないんだけど。<br />etc</li>
+                <li>障がい者手帳や療育手帳は持っていないんだけど。</li>
                 <li>
                   グレーゾーンと言われたことがある<br />
                   (もしかしてグレーゾーン⁉)
@@ -180,7 +215,9 @@
           <div class="service__title mb-lg items-center flex justify-center">
             <img src="image/service-title.png" alt="" />
           </div>
-          <div class="flex justify-between items-center mb-lg basic">
+          <div
+            class="flex justify-between items-center mb-lg basic service-group"
+          >
             <div>
               <img src="./image/ser-sub.png" alt="" />
             </div>
@@ -204,7 +241,7 @@
             <h4>ゲームカレッジLv.99 ゲーム学習カリキュラム</h4>
           </div>
           <div class="course__content mb-md">
-            <div class="flex justify-between">
+            <div class="flex justify-between course__groups">
               <div class="course__left flex items-center">
                 <img src="./image/keyboard.png" alt="" />
                 <h4>
@@ -268,7 +305,7 @@
           </div>
 
           <div class="course__content mb-md">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center course__book">
               <div class="flex items-center">
                 <img src="./image/book.png" alt="" />
                 <h4 class="game-title">
@@ -280,13 +317,13 @@
                 会性を身につけるために必要なカリキュラム。<br />
                 生活の流れに取り入れながら学習します。
               </p>
-              <a class="btn bg-red" href=""
+              <a class="btn bg-red course__book-btn" href=""
                 >詳しくこちら　<span><i class="btn-arrow"></i></span
               ></a>
             </div>
           </div>
           <div class="course__content">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center course__headphone">
               <div class="flex items-center game-box">
                 <img src="./image/headphone.png" alt="" />
                 <h4 class="game-title">その他</h4>
@@ -295,7 +332,7 @@
                 季節のイベントや社会見学など、<br />
                 日常にわくわくドキドキを＋αした内容をご用意。
               </p>
-              <a class="btn bg-red" href=""
+              <a class="btn bg-red course__headphone-btn" href=""
                 >詳しくこちら　<span><i class="btn-arrow"></i></span
               ></a>
             </div>
@@ -303,22 +340,18 @@
         </section>
       </article>
       <article class="contact flex items-center">
-        <section class="flex items-center basic">
+        <section class="flex items-center basic telephoneGroup">
           <div class="telephone">
             <h4>株式会社MYTH</h4>
             <p>072-471-9900</p>
           </div>
-          <div class="contact-right flex items-center">
-            <span>
-              <img class="qr" src="./image/qr.png" alt="" />
-            </span>
+          <div class="contact-right flex items-center justify-around">
+            <img class="qr" src="./image/qr.png" alt="" />
             <span
               >友達追加ですぐできる！<br />
               相談・見学体験予約もコチラ</span
             >
-            <span class="line">
-              <img src="./image/line.png" alt="" />
-            </span>
+            <img src="./image/line.png" alt="" />
           </div>
         </section>
       </article>
@@ -370,34 +403,30 @@
       </article>
 
       <article class="bnr flex justify-center items-center">
-        <section class="flex">
+        <section class="flex justify-center bnr-group">
           <img src="./image/img-facility.png" alt="" />
           <img src="./image/img-recruit.png" alt="" />
         </section>
       </article>
       <article class="contact flex items-center">
-        <section class="flex items-center basic">
+        <section class="flex items-center basic telephoneGroup">
           <div class="telephone">
             <h4>株式会社MYTH</h4>
             <p>072-471-9900</p>
           </div>
-          <div class="contact-right flex items-center">
-            <span>
-              <img class="qr" src="./image/qr.png" alt="" />
-            </span>
+          <div class="contact-right flex items-center justify-around">
+            <img class="qr" src="./image/qr.png" alt="" />
             <span
               >友達追加ですぐできる！<br />
               相談・見学体験予約もコチラ</span
             >
-            <span class="line">
-              <img src="./image/line.png" alt="" />
-            </span>
+            <img src="./image/line.png" alt="" />
           </div>
         </section>
       </article>
     </main>
     <footer class="info basic">
-      <div class="flex justify-between items-center mb-md">
+      <div class="flex justify-between items-center mb-md info-group">
         <div class="info-f">
           <img src="./image/logo.png" alt="" />
           <p>株式会社MYTH</p>
@@ -425,6 +454,7 @@
       </div>
       <p class="copy">©株式会社MYTH</p>
     </footer>
+    <script src="./js/app.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init({
