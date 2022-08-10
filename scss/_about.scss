@@ -1,0 +1,42 @@
+.pageTitle {
+  background: url(../image/bgPage-about.png) no-repeat center center;
+  height: 30vh;
+  background-size: cover;
+  h2 {
+    color: #fff;
+    font-size: 5rem;
+  }
+}
+.arrow {
+  padding: 1rem 0;
+  span {
+    padding: 0 2rem;
+    display: inline-block;
+  }
+}
+.plus {
+  margin-top: 4rem;
+
+  &-text {
+    font-size: 1.8rem;
+    padding: 4rem 0;
+  }
+}
+.gameAbout {
+  height: 900px !important;
+}
+
+//PHILOSOPHY
+
+.philosophy {
+  background: url(../image/bgPage-2.png) no-repeat center center;
+  height: 40vh;
+  background-size: cover;
+  h4 {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
