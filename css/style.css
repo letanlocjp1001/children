@@ -1056,15 +1056,15 @@ a:hover img:hover {
   right: -100%;
   z-index: 1000;
   text-align: center;
-  transition: all 2s linear;
-  width: 100%; }
+  transition: all 2s linear; }
   @media screen and (max-width: 767px) {
     .btnFixed {
       right: 0;
       transform: translateY(0);
       display: flex;
       top: auto;
-      bottom: -100%; } }
+      bottom: -100%;
+      width: 100%; } }
   .btnFixed .btn {
     width: 60px;
     height: 200px;
@@ -1108,9 +1108,6 @@ a:hover img:hover {
           writing-mode: horizontal-tb; } }
     .btnFixed .btn-1 .btn-arrow-1 {
       top: 15rem; }
-      @media screen and (max-width: 767px) {
-        .btnFixed .btn-1 .btn-arrow-1 {
-          top: 2.7rem; } }
 
 .btnShow {
   right: 0; }

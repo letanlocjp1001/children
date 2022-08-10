@@ -1174,7 +1174,6 @@
   z-index: 1000;
   text-align: center;
   transition: all 2s linear;
-  width: 100%;
 
   @media screen and (max-width: 767px) {
     right: 0;
@@ -1182,6 +1181,7 @@
     display: flex;
     top: auto;
     bottom: -100%;
+    width: 100%;
   }
   .btn {
     width: 60px;
@@ -1231,9 +1231,9 @@
     }
     .btn-arrow-1 {
       top: 15rem;
-      @media screen and (max-width: 767px) {
-        top: 2.7rem;
-      }
+      // @media screen and (max-width: 767px) {
+      //   top: 2.7rem;
+      // }
     }
   }
 }
