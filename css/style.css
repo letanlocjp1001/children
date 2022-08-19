@@ -177,6 +177,69 @@ a:hover img:hover {
   .philosophy p {
     font-size: 2rem; }
 
+.about-box {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #4290c6;
+  font-size: 1.6rem; }
+  .about-box-img {
+    width: 40%;
+    margin-right: 3rem;
+    border-radius: 10px; }
+  .about-box-tit {
+    font-size: 2.4rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.8rem;
+    margin-bottom: 2rem; }
+  .about-box-text {
+    flex: 50%;
+    font-size: 1.6rem; }
+    .about-box-text li {
+      text-indent: -1rem;
+      line-height: 2; }
+    .about-box-text li::before {
+      content: '・';
+      margin-right: 2px; }
+  .about-box-bottom {
+    margin: 2rem 0;
+    background: #f2f2e0;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-bottom: 2rem; }
+    .about-box-bottom ul {
+      margin-top: 2rem; }
+      .about-box-bottom ul li {
+        padding-left: 2rem; }
+  .about-box-inner {
+    padding: 1rem 2rem;
+    background: #9cbcd2;
+    color: #fff;
+    border-radius: 100px;
+    font-weight: 700; }
+
+.about-message {
+  background: url(/image/about-bg.png) no-repeat center center;
+  height: 60rem;
+  background-size: cover; }
+  .about-message section {
+    padding: 100px 0; }
+  .about-message-title {
+    font-size: 3rem;
+    color: #d37891;
+    position: relative; }
+    .about-message-title::after {
+      content: '';
+      height: 2px;
+      width: 50%;
+      background: #d37891;
+      position: absolute;
+      top: 50%;
+      left: 20%; }
+  .about-message-text {
+    width: 65%;
+    font-size: 1.6rem;
+    line-height: 2.2; }
+
 .btn {
   display: block;
   position: relative;
@@ -712,7 +775,7 @@ a:hover img:hover {
     @media screen and (max-width: 767px) {
       .course__title {
         font-size: 2.4rem; } }
-  .course h4::before {
+  .course .course-h4::before {
     content: '';
     width: 50px;
     height: 7px;
