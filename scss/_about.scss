@@ -126,7 +126,7 @@
 .about-day {
   background: url(/image/about-bg-day.png) no-repeat center center;
   background-size: cover;
-  height: 200rem;
+  height: 180rem;
 
   &-section {
     padding: 10rem 0;
@@ -143,10 +143,8 @@
     margin-bottom: 1rem;
   }
 
-  &-boxs {
-  }
-
   &-box {
+    position: relative;
     width: 30%;
     margin: 0 0 3.33% 3.33%;
     background: #fff;
@@ -154,7 +152,6 @@
     padding: 8rem 3rem;
 
     h5 {
-      border-bottom: 2px solid #ec93c5;
       font-size: 2.4rem;
       padding-bottom: 1rem;
       text-align: center;
@@ -163,5 +160,50 @@
     p {
       font-size: 1.6rem;
     }
+    i {
+      position: absolute;
+      padding: 0.5rem 3rem;
+      color: #fff;
+      top: 0;
+      left: 0;
+      font-size: 1.6rem;
+      font-weight: 700;
+      border-top-left-radius: 1rem;
+    }
   }
+}
+.border-pink {
+  border-bottom: 2px solid #de6dac;
+}
+.border-green {
+  border-bottom: 2px solid #22ac38;
+}
+
+.about-pink {
+  background: #de6dac;
+  &::after {
+    content: '';
+    position: absolute;
+    border-bottom: 36px solid transparent;
+    border-left: 30px solid #de6dac;
+    top: 0;
+    right: -30px;
+  }
+}
+.about-green {
+  background: #22ac38;
+  &::after {
+    content: '';
+    position: absolute;
+    border-bottom: 36px solid transparent;
+    border-left: 30px solid #22ac38;
+    top: 0;
+    right: -30px;
+  }
+}
+.abt-img {
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
