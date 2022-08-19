@@ -327,7 +327,7 @@
     font-weight: 700;
     font-size: 2.6rem;
     line-height: 1.8;
-    @media screen and (min-width: 767px) and (max-width: 1280px) {
+    @media screen and (min-width: 767px) and (max-width: 1279px) {
       font-size: 1.8rem;
     }
     @media screen and (max-width: 767px) {
@@ -521,16 +521,16 @@
   &__table {
     background-color: #fff;
     border: 2px solid #4290c6;
-    padding: 8rem 6rem;
+    padding: 6rem 4rem;
     z-index: 1;
   }
   &__list {
     li {
       flex: 50%;
-      font-size: 2rem;
+      font-size: 1.8rem;
       text-indent: -2.5rem;
       @media screen and (min-width: 767px) and (max-width: 1280px) {
-        font-size: 18px;
+        font-size: 16px;
       }
       @media screen and (max-width: 767px) {
         font-size: 1.4rem;
@@ -572,9 +572,12 @@
   }
 
   &-group {
-    flex-direction: column;
+    // flex-direction: column;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
     img {
-      width: 70%;
+      width: 34%;
       margin-bottom: 2rem;
     }
   }
@@ -590,7 +593,7 @@
       line-height: 2;
       font-size: 1.6rem;
       @media screen and (min-width: 767px) and (max-width: 1280px) {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 1.6;
       }
       @media screen and (max-width: 767px) {
@@ -823,8 +826,11 @@
   }
 
   .telephoneGroup {
-    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    @media screen and (max-width: 1280px) {
+      flex-direction: column;
+    }
   }
 
   .telephone {

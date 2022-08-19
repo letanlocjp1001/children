@@ -52,7 +52,6 @@ a:hover img:hover {
   margin-right: auto; }
   @media screen and (max-width: 1280px) {
     .basic {
-      max-width: 920px;
       margin-left: 5%;
       margin-right: 5%; } }
   @media screen and (max-width: 1000px) {
@@ -569,7 +568,7 @@ a:hover img:hover {
     font-weight: 700;
     font-size: 2.6rem;
     line-height: 1.8; }
-    @media screen and (min-width: 767px) and (max-width: 1280px) {
+    @media screen and (min-width: 767px) and (max-width: 1279px) {
       .msg p {
         font-size: 1.8rem; } }
     @media screen and (max-width: 767px) {
@@ -727,15 +726,15 @@ a:hover img:hover {
   .other__table {
     background-color: #fff;
     border: 2px solid #4290c6;
-    padding: 8rem 6rem;
+    padding: 6rem 4rem;
     z-index: 1; }
   .other__list li {
     flex: 50%;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-indent: -2.5rem; }
     @media screen and (min-width: 767px) and (max-width: 1280px) {
       .other__list li {
-        font-size: 18px; } }
+        font-size: 16px; } }
     @media screen and (max-width: 767px) {
       .other__list li {
         font-size: 1.4rem; } }
@@ -761,11 +760,12 @@ a:hover img:hover {
     @media screen and (max-width: 767px) {
       .service__title img {
         width: 80%; } }
-  .service-group {
-    flex-direction: column; }
-    .service-group img {
-      width: 70%;
-      margin-bottom: 2rem; }
+  @media screen and (max-width: 767px) {
+    .service-group {
+      flex-direction: column; } }
+  .service-group img {
+    width: 34%;
+    margin-bottom: 2rem; }
   .service__sub {
     color: #fff;
     margin-left: 10rem; }
@@ -777,7 +777,7 @@ a:hover img:hover {
       font-size: 1.6rem; }
       @media screen and (min-width: 767px) and (max-width: 1280px) {
         .service__sub p {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
           line-height: 1.6; } }
       @media screen and (max-width: 767px) {
         .service__sub p {
@@ -959,8 +959,11 @@ a:hover img:hover {
     .contact {
       height: 300px; } }
   .contact .telephoneGroup {
-    flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%; }
+    @media screen and (max-width: 1280px) {
+      .contact .telephoneGroup {
+        flex-direction: column; } }
   .contact .telephone {
     margin-right: 4rem; }
     @media screen and (min-width: 767px) and (max-width: 1280px) {
