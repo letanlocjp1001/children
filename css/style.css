@@ -240,6 +240,36 @@ a:hover img:hover {
     font-size: 1.6rem;
     line-height: 2.2; }
 
+.about-day {
+  background: url(/image/about-bg-day.png) no-repeat center center;
+  background-size: cover;
+  height: 200rem; }
+  .about-day-section {
+    padding: 10rem 0; }
+
+.aboutTime-title {
+  font-size: 3rem;
+  font-style: italic;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem; }
+
+.aboutTime-box {
+  width: 30%;
+  margin: 0 0 3.33% 3.33%;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 8rem 3rem; }
+  .aboutTime-box h5 {
+    border-bottom: 2px solid #ec93c5;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .aboutTime-box p {
+    font-size: 1.6rem; }
+
 .btn {
   display: block;
   position: relative;
