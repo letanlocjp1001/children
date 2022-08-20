@@ -307,9 +307,18 @@
 // /////////////////
 // BANNER
 .banner {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   img {
     height: auto;
     width: 100%;
+  }
+}
+.banner2 {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
   }
 }
 
@@ -432,20 +441,33 @@
     }
   }
 }
+.title-stress {
+  z-index: 1;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.title-stress2 {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (max-width: 375px) {
+    width: 80%;
+  }
+}
 .cloud {
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     margin-bottom: 3rem;
-
     text-align: center;
-
     img {
       width: 70%;
     }
   }
   @media screen and (max-width: 500px) {
     img {
-      width: 60%;
+      width: 90%;
     }
   }
 }
@@ -500,6 +522,11 @@
 .other {
   position: relative;
   margin-bottom: 4rem;
+
+  @media screen and (max-width: 375px) {
+    margin-top: 4rem;
+  }
+
   &__title {
     position: absolute;
     top: -30px;
@@ -525,6 +552,10 @@
     z-index: 1;
   }
   &__list {
+    @media screen and (max-width: 375px) {
+      flex-direction: column;
+      line-height: 2;
+    }
     li {
       flex: 50%;
       font-size: 1.8rem;
@@ -543,6 +574,9 @@
       @media screen and (max-width: 767px) {
         padding-right: 10%;
       }
+      @media screen and (max-width: 375px) {
+        padding-right: 0;
+      }
     }
     li::before {
       content: '●';
@@ -556,7 +590,7 @@
 /// SERVICE
 
 .service {
-  background: url(../image//bg-green.png) no-repeat center center;
+  background: url(../image/bg-green.png) no-repeat center center;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -569,6 +603,9 @@
         width: 80%;
       }
     }
+    @media screen and (max-width: 375px) {
+      margin-bottom: 2rem;
+    }
   }
 
   &-group {
@@ -576,9 +613,15 @@
     @media screen and (max-width: 767px) {
       flex-direction: column;
     }
+    @media screen and (max-width: 375px) {
+      justify-content: flex-start;
+    }
     img {
       width: 34%;
       margin-bottom: 2rem;
+      @media screen and (max-width: 375px) {
+        width: 60%;
+      }
     }
   }
   &__sub {
@@ -587,6 +630,9 @@
 
     @media screen and (max-width: 767px) {
       margin-left: 4rem;
+    }
+    @media screen and (max-width: 375px) {
+      margin-left: 0;
     }
 
     p {
@@ -715,6 +761,9 @@
       flex-wrap: wrap;
       justify-content: flex-start;
     }
+    @media screen and (max-width: 375px) {
+      flex-direction: column;
+    }
 
     li {
       padding: 2px 0;
@@ -841,10 +890,19 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 2rem;
     }
+    @media screen and (max-width: 375px) {
+      margin-right: none;
+    }
 
     h4 {
       margin-left: 5rem;
       font-size: 2rem;
+
+      @media screen and (max-width: 375px) {
+        font-size: 1.6rem;
+        margin-left: 5rem;
+        margin-bottom: -2rem;
+      }
     }
     p {
       font-size: 60px;
@@ -852,6 +910,9 @@
       line-height: 1;
       @media screen and (max-width: 1280px) {
         font-size: 40px;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 30px;
       }
     }
     p::before {
@@ -1025,6 +1086,7 @@
   &-list {
     padding-right: 4rem;
     font-size: 1.6rem;
+    line-height: 2.5;
 
     @media screen and (min-width: 767px) and (max-width: 1280px) {
       font-size: 1.4rem;

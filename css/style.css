@@ -553,9 +553,19 @@ a:hover img:hover {
       letter-spacing: 0;
       font-weight: 700; }
 
+@media screen and (max-width: 767px) {
+  .banner {
+    display: none; } }
+
 .banner img {
   height: auto;
   width: 100%; }
+
+.banner2 {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .banner2 {
+      display: block; } }
 
 .msg {
   background: #d8746a;
@@ -646,6 +656,21 @@ a:hover img:hover {
       .stress .title {
         width: 70%; } }
 
+.title-stress {
+  z-index: 1; }
+  @media screen and (max-width: 767px) {
+    .title-stress {
+      display: none; } }
+
+.title-stress2 {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .title-stress2 {
+      display: block; } }
+  @media screen and (max-width: 375px) {
+    .title-stress2 {
+      width: 80%; } }
+
 @media screen and (max-width: 767px) {
   .cloud {
     flex-wrap: wrap;
@@ -656,7 +681,7 @@ a:hover img:hover {
 
 @media screen and (max-width: 500px) {
   .cloud img {
-    width: 60%; } }
+    width: 90%; } }
 
 .cloud-1,
 .cloud-2,
@@ -707,6 +732,9 @@ a:hover img:hover {
 .other {
   position: relative;
   margin-bottom: 4rem; }
+  @media screen and (max-width: 375px) {
+    .other {
+      margin-top: 4rem; } }
   .other__title {
     position: absolute;
     top: -30px;
@@ -728,6 +756,10 @@ a:hover img:hover {
     border: 2px solid #4290c6;
     padding: 6rem 4rem;
     z-index: 1; }
+  @media screen and (max-width: 375px) {
+    .other__list {
+      flex-direction: column;
+      line-height: 2; } }
   .other__list li {
     flex: 50%;
     font-size: 1.8rem;
@@ -744,13 +776,16 @@ a:hover img:hover {
   @media screen and (max-width: 767px) {
     .other__list li:nth-child(odd) {
       padding-right: 10%; } }
+  @media screen and (max-width: 375px) {
+    .other__list li:nth-child(odd) {
+      padding-right: 0; } }
   .other__list li::before {
     content: '●';
     color: #4290c6;
     margin-right: 0.5rem; }
 
 .service {
-  background: url(../image//bg-green.png) no-repeat center center;
+  background: url(../image/bg-green.png) no-repeat center center;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -760,18 +795,30 @@ a:hover img:hover {
     @media screen and (max-width: 767px) {
       .service__title img {
         width: 80%; } }
+    @media screen and (max-width: 375px) {
+      .service__title {
+        margin-bottom: 2rem; } }
   @media screen and (max-width: 767px) {
     .service-group {
       flex-direction: column; } }
+  @media screen and (max-width: 375px) {
+    .service-group {
+      justify-content: flex-start; } }
   .service-group img {
     width: 34%;
     margin-bottom: 2rem; }
+    @media screen and (max-width: 375px) {
+      .service-group img {
+        width: 60%; } }
   .service__sub {
     color: #fff;
     margin-left: 10rem; }
     @media screen and (max-width: 767px) {
       .service__sub {
         margin-left: 4rem; } }
+    @media screen and (max-width: 375px) {
+      .service__sub {
+        margin-left: 0; } }
     .service__sub p {
       line-height: 2;
       font-size: 1.6rem; }
@@ -877,6 +924,9 @@ a:hover img:hover {
         flex: 50%;
         flex-wrap: wrap;
         justify-content: flex-start; } }
+    @media screen and (max-width: 375px) {
+      .course__right {
+        flex-direction: column; } }
     .course__right li {
       padding: 2px 0;
       font-size: 1.6rem; }
@@ -972,9 +1022,17 @@ a:hover img:hover {
     @media screen and (max-width: 767px) {
       .contact .telephone {
         margin-bottom: 2rem; } }
+    @media screen and (max-width: 375px) {
+      .contact .telephone {
+        margin-right: none; } }
     .contact .telephone h4 {
       margin-left: 5rem;
       font-size: 2rem; }
+      @media screen and (max-width: 375px) {
+        .contact .telephone h4 {
+          font-size: 1.6rem;
+          margin-left: 5rem;
+          margin-bottom: -2rem; } }
     .contact .telephone p {
       font-size: 60px;
       font-weight: bold;
@@ -982,6 +1040,9 @@ a:hover img:hover {
       @media screen and (max-width: 1280px) {
         .contact .telephone p {
           font-size: 40px; } }
+      @media screen and (max-width: 375px) {
+        .contact .telephone p {
+          font-size: 30px; } }
     .contact .telephone p::before {
       content: url(../image/phone.png);
       margin-right: 1rem; }
@@ -1111,7 +1172,8 @@ a:hover img:hover {
     flex: 50%; }
   .info-list {
     padding-right: 4rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    line-height: 2.5; }
     @media screen and (min-width: 767px) and (max-width: 1280px) {
       .info-list {
         font-size: 1.4rem; } }
