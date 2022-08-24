@@ -1042,9 +1042,9 @@ a:hover img:hover {
           font-size: 1.4rem; } }
   @media screen and (max-width: 1280px) {
     .course__book {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      gap: 4.7rem; }
       .course__book a {
-        margin-top: 25px;
         margin-left: auto;
         margin-right: auto; } }
   @media screen and (max-width: 767px) {
@@ -1053,7 +1053,8 @@ a:hover img:hover {
       align-items: flex-start; } }
   @media screen and (max-width: 1280px) {
     .course__headphone {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      gap: 3.5rem; }
       .course__headphone a {
         display: block;
         margin-left: auto;

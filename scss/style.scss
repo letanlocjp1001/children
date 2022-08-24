@@ -913,8 +913,8 @@
   &__book {
     @media screen and (max-width: 1280px) {
       flex-wrap: wrap;
+      gap: 4.7rem;
       a {
-        margin-top: 25px;
         margin-left: auto;
         margin-right: auto;
       }
@@ -928,6 +928,7 @@
   &__headphone {
     @media screen and (max-width: 1280px) {
       flex-wrap: wrap;
+      gap: 3.5rem;
       a {
         display: block;
         margin-left: auto;
